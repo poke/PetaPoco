@@ -3,7 +3,7 @@
  
 using System;
 
-namespace PetaPoco
+namespace PetaPoco.Attributes
 {
 	/// <summary>
 	/// For explicit poco properties, marks the property as a column and optionally 

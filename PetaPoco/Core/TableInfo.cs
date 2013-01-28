@@ -2,6 +2,7 @@
 // Copyright © 2011-2012 Topten Software.  All Rights Reserved.
  
 using System;
+using PetaPoco.Attributes;
 
 namespace PetaPoco
 {

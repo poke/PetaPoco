@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetaPoco.DevBed", "PetaPoco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csj", "csj\csj.csproj", "{53F07078-98EA-4494-9829-74245992A7F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetaPoco.Attributes", "PetaPoco.Attributes\PetaPoco.Attributes.csproj", "{AA464B0A-CA8D-443A-B684-9D46F570DC72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,16 @@ Global
 		{53F07078-98EA-4494-9829-74245992A7F1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{53F07078-98EA-4494-9829-74245992A7F1}.Release|x86.ActiveCfg = Release|x86
 		{53F07078-98EA-4494-9829-74245992A7F1}.Release|x86.Build.0 = Release|x86
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AA464B0A-CA8D-443A-B684-9D46F570DC72}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

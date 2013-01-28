@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PetaPoco;
+using PetaPoco.Attributes;
 
 namespace PetaPoco.Tests
 {

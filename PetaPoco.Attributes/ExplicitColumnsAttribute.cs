@@ -3,7 +3,7 @@
  
 using System;
 
-namespace PetaPoco
+namespace PetaPoco.Attributes
 {
 	/// <summary>
 	/// Poco classes marked with the Explicit attribute require all column properties to 

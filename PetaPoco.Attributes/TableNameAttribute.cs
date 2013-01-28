@@ -3,7 +3,7 @@
  
 using System;
 
-namespace PetaPoco
+namespace PetaPoco.Attributes
 {
 	/// <summary>
 	/// Sets the DB table name to be used for a Poco class.

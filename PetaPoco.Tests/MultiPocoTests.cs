@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using PetaTest;
 using PetaPoco;
+using PetaPoco.Attributes;
 
 namespace PetaPoco.Tests
 {

@@ -59,7 +59,6 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\ColumnAttribute.cs" />
     <Compile Include="Core\AnsiString.cs" />
     <Compile Include="Core\ColumnInfo.cs" />
     <Compile Include="Core\Mappers.cs" />
@@ -83,11 +82,6 @@
     <Compile Include="Core\Sql.cs" />
     <Compile Include="Core\TableInfo.cs" />
     <Compile Include="Core\Page.cs" />
-    <Compile Include="Attributes\PrimaryKeyAttribute.cs" />
-    <Compile Include="Attributes\TableNameAttribute.cs" />
-    <Compile Include="Attributes\ResultColumnAttribute.cs" />
-    <Compile Include="Attributes\IgnoreAttribute.cs" />
-    <Compile Include="Attributes\ExplicitColumnsAttribute.cs" />
     <Compile Include="OracleProvider.cs" />
     <Compile Include="Database.cs" />
     <None Include="PetaPoco.cs" />
@@ -113,6 +107,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PetaPoco.Attributes\PetaPoco.Attributes.csproj">
+      <Project>{aa464b0a-ca8d-443a-b684-9d46f570dc72}</Project>
+      <Name>PetaPoco.Attributes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

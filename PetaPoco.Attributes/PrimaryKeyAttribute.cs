@@ -3,7 +3,7 @@
  
 using System;
 
-namespace PetaPoco
+namespace PetaPoco.Attributes
 {
 	/// <summary>
 	/// Specifies the primary key column of a poco class, whether the column is auto incrementing

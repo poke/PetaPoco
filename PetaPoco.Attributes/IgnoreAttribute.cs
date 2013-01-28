@@ -3,7 +3,7 @@
  
 using System;
 
-namespace PetaPoco
+namespace PetaPoco.Attributes
 {
 	/// <summary>
 	/// Use the Ignore attribute on POCO class properties that shouldn't be mapped
