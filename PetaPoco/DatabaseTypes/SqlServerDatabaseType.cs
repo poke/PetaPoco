@@ -12,13 +12,16 @@ namespace PetaPoco.DatabaseTypes
 	{
 		public override string BuildPageQuery(long skip, long take, PagingHelper.SQLParts parts, ref object[] args)
 		{
-			parts.sqlSelectRemoved = PagingHelper.rxOrderBy.Replace(parts.sqlSelectRemoved, "", 1);
-			if (PagingHelper.rxDistinct.IsMatch(parts.sqlSelectRemoved))
+			string query = parts.sqlSelectRemoved;
+			if (!string.IsNullOrWhiteSpace(parts.sqlOrderBy))
+				query = query.Replace(parts.sqlOrderBy, string.Empty);
+
+			if (PagingHelper.rxDistinct.IsMatch(query))
 			{
-				parts.sqlSelectRemoved = "peta_inner.* FROM (SELECT " + parts.sqlSelectRemoved + ") peta_inner";
+				query = "peta_inner.* FROM (SELECT " + query + ") peta_inner";
 			}
 			var sqlPage = string.Format("SELECT * FROM (SELECT ROW_NUMBER() OVER ({0}) peta_rn, {1}) peta_paged WHERE peta_rn>@{2} AND peta_rn<=@{3}",
-									parts.sqlOrderBy == null ? "ORDER BY (SELECT NULL)" : parts.sqlOrderBy, parts.sqlSelectRemoved, args.Length, args.Length + 1);
+									parts.sqlOrderBy == null ? "ORDER BY (SELECT NULL)" : parts.sqlOrderBy, query, args.Length, args.Length + 1);
 			args = args.Concat(new object[] { skip, skip + take }).ToArray();
 
 			return sqlPage;
